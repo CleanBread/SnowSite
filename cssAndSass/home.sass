@@ -14,6 +14,10 @@ body
         position: absolute
         top: 0px
         left: 0px
+    &__information
+        padding: 100px 0
+        position: relative
+        text-align: center
 
 .imageBox
     width: 100%
@@ -30,3 +34,58 @@ body
         height: 100%
         background: rgba(12, 12, 12, 0.6)
         background-size: cover
+
+.information
+    height: 500px
+    color: white
+    .sentences
+        height: 100%
+        &__topline
+            text-transform: uppercase
+            font-family: inherit
+            font-size: .93rem
+            letter-spacing: .2em
+            margin-bottom: 1.1rem
+            font-weight: 700
+        &__headline
+            font-size: 3.4rem
+            font-family: Playfair Display,serif
+            font-weight: 700
+            margin-top: 0px
+    &__sentences
+        margin: 0 120px
+
+.header
+    height: 101px
+    position: fixed
+    top: 0px
+    left: 0px
+    width: 100%
+    z-index: 1
+    .conteiner
+        height: 35px
+        padding: 33px 0
+        margin: 0 120px
+        &__nav
+            height: 100%
+            .logo
+                display: inline-block
+                &__img
+                    display: block
+                    width: 85px
+                    height: 33.02px
+        .navbar
+            margin: 9px 0
+            vertical-align: middle
+            height: 100%
+            float: right
+            &__item
+                display: inline-block
+                margin-right: 20px
+            &__link
+                color: #bfbfbf
+                font-weight: 700
+            &__link_active:hover
+                color: white
+a
+    text-decoration: none
