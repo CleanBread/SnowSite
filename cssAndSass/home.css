@@ -138,16 +138,37 @@ a {
 .statistics {
   background: url("C:/Users/gleb4/Desktop/portfolio/second/images/bg-pattern.jpg");
   background-size: cover;
-  color: white; }
+  color: white;
+  font-family: Work Sans,sans-serif; }
   .statistics__container {
     height: 85px;
     margin: 78px 120px;
     display: flex; }
   .statistics .item {
     min-height: 50px;
-    padding: 30px 15px 0 15px; }
+    padding: 30px 15px 0 0;
+    position: relative;
+    margin-right: 29px; }
+    .statistics .item__icon {
+      display: inline-block;
+      position: absolute; }
+    .statistics .item__text {
+      display: inline-block;
+      margin-left: 72px; }
+      .statistics .item__text .text {
+        text-transform: uppercase;
+        font-weight: 700; }
+      .statistics .item__text .headline {
+        margin-bottom: 7px;
+        font-size: 1.25rem; }
   .statistics .icon {
-    font-family: Pe-icon-7-stroke; }
-  .statistics .icon::before {
-    content: "\e622";
+    font-family: Pe-icon-7-stroke;
     font-size: 50px; }
+  .statistics .icon_case::before {
+    content: "\e622"; }
+  .statistics .icon_clock::before {
+    content: "\e66b"; }
+  .statistics .icon_star::before {
+    content: "\e611"; }
+  .statistics .icon_heart::before {
+    content: "\e642"; }

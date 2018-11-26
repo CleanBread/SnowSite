@@ -137,18 +137,39 @@ a
     background: url('C:/Users/gleb4/Desktop/portfolio/second/images/bg-pattern.jpg')
     background-size: cover
     color: white
+    font-family: Work Sans,sans-serif
     &__container
         height: 85px
         margin: 78px 120px
         display: flex
     .item
         min-height: 50px
-        padding: 30px 15px 0 15px
+        padding: 30px 15px 0 0
+        position: relative
+        margin-right: 29px
+        &__icon
+            display: inline-block
+            position: absolute
+        &__text
+            display: inline-block
+            margin-left: 72px
+            .text
+                text-transform: uppercase
+                font-weight: 700
+            .headline
+                margin-bottom: 7px
+                font-size: 1.25rem
     .icon
         font-family: Pe-icon-7-stroke
-    .icon::before
-        content: "\e622"
         font-size: 50px
+    .icon_case::before
+        content: "\e622"
+    .icon_clock::before
+        content: "\e66b"
+    .icon_star::before
+        content: "\e611"
+    .icon_heart::before
+        content: "\e642"
 
 
 
