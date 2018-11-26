@@ -1,3 +1,8 @@
+@font-face
+    font-family: Pe-icon-7-stroke
+    src: url("C:/Users/gleb4/Desktop/portfolio/second/fonts/Pe-icon-7-stroke.woff") 
+    format: ("woff")
+    
 .hide
     display: none !important
     opacity: 0
@@ -131,8 +136,20 @@ a
 .statistics
     background: url('C:/Users/gleb4/Desktop/portfolio/second/images/bg-pattern.jpg')
     background-size: cover
+    color: white
     &__container
         height: 85px
+        margin: 78px 120px
+        display: flex
+    .item
+        min-height: 50px
+        padding: 30px 15px 0 15px
+    .icon
+        font-family: Pe-icon-7-stroke
+    .icon::before
+        content: "\e622"
+        font-size: 50px
+
 
 
 
