@@ -193,6 +193,43 @@ a
         .item
             background-size: cover
             background-position: 50% 50%
+            position: relative
+            color: white
+            &_active
+                width: 100%
+                height: 100%
+                position: absolute
+                transition-duration: 0.5s
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+            &_active:hover
+                cursor: pointer
+                transition-duration: 0.5s
+                background: rgba(0,0,0,.85)
+            &_active:hover .item__text
+                opacity: 1
+                transition-duration: 0.5s
+                transform: translateY(-5px)
+                transition: transform .4s .3s,opacity .4s .3s
+            &_active:hover .item__headline
+                opacity: 1
+                transition-duration: 0.5s
+                transform: translateY(-5px)
+                transition: transform .4s .2s,opacity .4s .2s
+            &__headline
+                text-align: center
+                opacity: 0
+                transform: translateY(5px)
+                transition: .2s
+                margin-bottom: 10px
+                font-size: 1.69rem
+            &__text
+                text-align: center
+                opacity: 0
+                transform: translateY(5px)
+                transition: .2s
         &__item_1
             grid-area: item_1
             background-image: url('C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-7-sm.jpg')

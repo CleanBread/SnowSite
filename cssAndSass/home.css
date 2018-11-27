@@ -195,7 +195,44 @@ a {
     grid-template-areas: ". item_1 item_2 item_3 ." ". item_4 item_5 item_6 ." ". item_7 item_8 item_9 ."; }
     .portfolio .projects .item {
       background-size: cover;
-      background-position: 50% 50%; }
+      background-position: 50% 50%;
+      position: relative;
+      color: white; }
+      .portfolio .projects .item_active {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition-duration: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+      .portfolio .projects .item_active:hover {
+        cursor: pointer;
+        transition-duration: 0.5s;
+        background: rgba(0, 0, 0, 0.85); }
+      .portfolio .projects .item_active:hover .item__text {
+        opacity: 1;
+        transition-duration: 0.5s;
+        transform: translateY(-5px);
+        transition: transform .4s .3s,opacity .4s .3s; }
+      .portfolio .projects .item_active:hover .item__headline {
+        opacity: 1;
+        transition-duration: 0.5s;
+        transform: translateY(-5px);
+        transition: transform .4s .2s,opacity .4s .2s; }
+      .portfolio .projects .item__headline {
+        text-align: center;
+        opacity: 0;
+        transform: translateY(5px);
+        transition: .2s;
+        margin-bottom: 10px;
+        font-size: 1.69rem; }
+      .portfolio .projects .item__text {
+        text-align: center;
+        opacity: 0;
+        transform: translateY(5px);
+        transition: .2s; }
     .portfolio .projects__item_1 {
       grid-area: item_1;
       background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-7-sm.jpg"); }
