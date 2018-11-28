@@ -1,7 +1,16 @@
+@charset "UTF-8";
 @font-face {
   font-family: Pe-icon-7-stroke;
   src: url("C:/Users/gleb4/Desktop/portfolio/second/fonts/Pe-icon-7-stroke.woff");
   format: "woff"; }
+
+@font-face {
+  font-family: Playfair Display;
+  src: url("C:/Users/gleb4/Desktop/portfolio/second/fonts/PlayfairDisplay-BoldItalic.otf"); }
+
+@font-face {
+  font-family: Work Sans;
+  src: url("C:/Users/gleb4/Desktop/portfolio/second/fonts/WorkSans-Medium.otf"); }
 
 .hide {
   display: none !important;
@@ -57,13 +66,13 @@ body {
       margin-bottom: 1.1rem;
       font-weight: 700; }
     .information .sentences__headline {
+      font-family: Playfair Display,serif;
       font-size: 3.4rem;
       margin-top: 0px; }
   .information__sentences {
     margin: 0 120px; }
 
 .headline {
-  font-family: Playfair Display,serif;
   font-weight: 700; }
 
 .header {
@@ -260,3 +269,45 @@ a {
     .portfolio .projects__item_9 {
       grid-area: item_9;
       background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-12-sm.jpg"); }
+
+.karusel {
+  background: url("C:/Users/gleb4/Desktop/portfolio/second/images/bg-pattern.jpg");
+  background-size: cover;
+  color: white; }
+  .karusel .box {
+    width: 100%;
+    margin-top: 177px; }
+    .karusel .box__item {
+      max-width: 715px;
+      margin: auto;
+      text-align: center;
+      cursor: pointer; }
+      .karusel .box__item .quote {
+        font-size: 1.685rem;
+        line-height: 1.45;
+        font-family: Playfair Display,serif; }
+      .karusel .box__item .quote::before {
+        content: "“ "; }
+      .karusel .box__item .quote::after {
+        content: " ”"; }
+      .karusel .box__item .autor {
+        font-family: Work Sans;
+        text-transform: uppercase;
+        font-size: .95rem; }
+    .karusel .box .numberbox {
+      text-align: center;
+      margin: 87px 0 65px 0; }
+      .karusel .box .numberbox__list {
+        list-style: none;
+        padding: 0; }
+        .karusel .box .numberbox__list .number {
+          display: inline-block;
+          height: 10px;
+          width: 10px;
+          background: white;
+          border-radius: 50%;
+          opacity: 0.25;
+          transform: scale(0.6); }
+        .karusel .box .numberbox__list .number_active {
+          opacity: 1;
+          transform: scale(1); }
