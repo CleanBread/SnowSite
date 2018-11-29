@@ -17,7 +17,8 @@
   opacity: 0; }
 
 body {
-  margin: 0px; }
+  margin: 0px;
+  overflow-x: hidden; }
 
 .content {
   display: flex;
@@ -277,11 +278,20 @@ a {
   .karusel .box {
     width: 100%;
     margin-top: 177px; }
+    .karusel .box_relative {
+      position: relative;
+      height: 204.094px;
+      cursor: pointer; }
+    .karusel .box_absolute {
+      position: absolute;
+      width: 100%;
+      user-select: none; }
+    .karusel .box_active {
+      transition: 1.2s; }
     .karusel .box__item {
       max-width: 715px;
       margin: auto;
-      text-align: center;
-      cursor: pointer; }
+      text-align: center; }
       .karusel .box__item .quote {
         font-size: 1.685rem;
         line-height: 1.45;
