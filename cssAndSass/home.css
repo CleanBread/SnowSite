@@ -278,6 +278,10 @@ a {
   .karusel .box {
     width: 100%;
     margin-top: 177px; }
+    .karusel .box .activate {
+      left: 100%; }
+    .karusel .box .activateer {
+      left: 200%; }
     .karusel .box_relative {
       position: relative;
       height: 204.094px;
