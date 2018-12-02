@@ -271,6 +271,9 @@ a {
       grid-area: item_9;
       background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-12-sm.jpg"); }
 
+.cursor_grabbing {
+  cursor: grabbing; }
+
 .karusel {
   background: url("C:/Users/gleb4/Desktop/portfolio/second/images/bg-pattern.jpg");
   background-size: cover;
@@ -285,13 +288,13 @@ a {
     .karusel .box_relative {
       position: relative;
       height: 204.094px;
-      cursor: pointer; }
+      cursor: grab; }
     .karusel .box_absolute {
       position: absolute;
       width: 100%;
       user-select: none; }
     .karusel .box_active {
-      transition: 1.2s; }
+      transition: .7s; }
     .karusel .box__item {
       max-width: 715px;
       margin: auto;
@@ -324,4 +327,5 @@ a {
           transform: scale(0.6); }
         .karusel .box .numberbox__list .number_active {
           opacity: 1;
-          transform: scale(1); }
+          transform: scale(1);
+          transition: .7s; }
