@@ -1,8 +1,8 @@
 {
-  "name": "second_site",
+  "name": "secondsiteforportfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2"
@@ -13,9 +13,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/CleanBread/secondSiteForPortfolio.git"
+    "url": "git+https://github.com/CleanBread/secondSiteForPortfolio.git"
   },
-  "author": "Gleb Chistyakov",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CleanBread/secondSiteForPortfolio/issues"

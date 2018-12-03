@@ -1,16 +1,16 @@
 @charset "UTF-8";
 @font-face {
   font-family: Pe-icon-7-stroke;
-  src: url("C:/Users/gleb4/Desktop/portfolio/second/fonts/Pe-icon-7-stroke.woff");
+  src: url("../fonts/Pe-icon-7-stroke.woff");
   format: "woff"; }
 
 @font-face {
   font-family: Playfair Display;
-  src: url("C:/Users/gleb4/Desktop/portfolio/second/fonts/PlayfairDisplay-BoldItalic.otf"); }
+  src: url("..fonts/PlayfairDisplay-BoldItalic.otf"); }
 
 @font-face {
   font-family: Work Sans;
-  src: url("C:/Users/gleb4/Desktop/portfolio/second/fonts/WorkSans-Medium.otf"); }
+  src: url("../fonts/WorkSans-Medium.otf"); }
 
 .hide {
   display: none !important;
@@ -47,7 +47,7 @@ body {
     top: 0; }
   .imageBox .image {
     height: 100%;
-    background: url("C:/Users/gleb4/Desktop/portfolio/second/images/home-7.jpg") 50% 50%;
+    background: url("../images/home-7.jpg") 50% 50%;
     background-size: cover; }
   .imageBox .shadow {
     height: 100%;
@@ -148,7 +148,7 @@ a {
   letter-spacing: .004em; }
 
 .statistics {
-  background: url("C:/Users/gleb4/Desktop/portfolio/second/images/bg-pattern.jpg");
+  background: url("../images/bg-pattern.jpg");
   background-size: cover;
   color: white;
   font-family: Work Sans,sans-serif; }
@@ -245,37 +245,37 @@ a {
         transition: .2s; }
     .portfolio .projects__item_1 {
       grid-area: item_1;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-7-sm.jpg"); }
+      background-image: url("../images/portfolio-7-sm.jpg"); }
     .portfolio .projects__item_2 {
       grid-area: item_2;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-4-sm.jpg"); }
+      background-image: url("../images/portfolio-4-sm.jpg"); }
     .portfolio .projects__item_3 {
       grid-area: item_3;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-5-sm.jpg"); }
+      background-image: url("../images/portfolio-5-sm.jpg"); }
     .portfolio .projects__item_4 {
       grid-area: item_4;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-9-sm.jpg"); }
+      background-image: url("../images/portfolio-9-sm.jpg"); }
     .portfolio .projects__item_5 {
       grid-area: item_5;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-3-sm.jpg"); }
+      background-image: url("../images/portfolio-3-sm.jpg"); }
     .portfolio .projects__item_6 {
       grid-area: item_6;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-8-sm.jpg"); }
+      background-image: url("../images/portfolio-8-sm.jpg"); }
     .portfolio .projects__item_7 {
       grid-area: item_7;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-2-sm.jpg"); }
+      background-image: url("../images/portfolio-2-sm.jpg"); }
     .portfolio .projects__item_8 {
       grid-area: item_8;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-6-sm.jpg"); }
+      background-image: url("../images/portfolio-6-sm.jpg"); }
     .portfolio .projects__item_9 {
       grid-area: item_9;
-      background-image: url("C:/Users/gleb4/Desktop/portfolio/second/images/portfolio-12-sm.jpg"); }
+      background-image: url("../images/portfolio-12-sm.jpg"); }
 
 .cursor_grabbing {
   cursor: grabbing; }
 
 .karusel {
-  background: url("C:/Users/gleb4/Desktop/portfolio/second/images/bg-pattern.jpg");
+  background: url("../images/bg-pattern.jpg");
   background-size: cover;
   color: white; }
   .karusel .box {
