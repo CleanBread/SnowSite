@@ -18,19 +18,31 @@
             let scroller = setInterval(() => {
                 // считаем на сколько скроллить за 1 такт
                 let scrollBy = coordY / framesCount;
-      
+
                 // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
                 // и дно страницы не достигнуто
-                if(scrollBy < coordY - window.pageYOffset && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-                    // то скроллим на к-во пикселей, которое соответствует одному такту
-                    window.scrollBy(0, scrollBy);
-                } else if (scrollBy < document.querySelector(item.getAttribute('href')).getBoundingClientRect().top - 100)
-                {
-                    window.scrollBy(0, scrollBy);
-                } else 
-                {
-                    // иначе добираемся до элемента и выходим из интервала
-                    clearInterval(scroller);
+                if (scrollBy > 0) {
+                    if(scrollBy < coordY - window.pageYOffset) {
+                        // то скроллим на к-во пикселей, которое соответствует одному такту
+                        window.scrollBy(0, scrollBy);
+                    } else if (scrollBy < document.querySelector(item.getAttribute('href')).getBoundingClientRect().top - 100 && scrollBy >= 0.8)
+                    {
+                        window.scrollBy(0, scrollBy);
+                    } else 
+                    {
+                        // иначе добираемся до элемента и выходим из интервала
+                        let coordY =  document.querySelector(item.getAttribute('href')).getBoundingClientRect().top - 100;
+                        window.scrollBy(0, coordY);
+                        clearInterval(scroller);
+                    }
+                } else {
+                    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top - 100;
+                    if(coordY < 0 ) {
+                        window.scrollBy(0, scrollBy);
+                    }else {
+                        window.scrollBy(0, coordY);
+                        clearInterval(scroller);
+                    }
                 }
             // время интервала равняется частному от времени анимации и к-ва кадров
             }, animationTime / framesCount);
