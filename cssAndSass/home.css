@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: Playfair Display;
-  src: url("..fonts/PlayfairDisplay-BoldItalic.otf"); }
+  src: url("../fonts/PlayfairDisplay-BoldItalic.otf"); }
 
 @font-face {
   font-family: Work Sans;
@@ -95,7 +95,8 @@ body {
     .header .conteiner__nav {
       height: 100%; }
       .header .conteiner__nav .logo {
-        display: inline-block; }
+        display: inline-block;
+        cursor: pointer; }
         .header .conteiner__nav .logo__img {
           display: block;
           width: 85px;
