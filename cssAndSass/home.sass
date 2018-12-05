@@ -23,7 +23,6 @@ body
 
 .title
     min-height: 700px
-    height: 100vh
     position: relative
     &__imageBox
         position: absolute
@@ -51,10 +50,9 @@ body
         background-size: cover
 
 .information
-    height: 500px
     color: white
     .sentences
-        height: 100%
+        margin: 0 120px
         &__topline
             text-transform: uppercase
             font-family: inherit
@@ -66,8 +64,6 @@ body
             font-family: Playfair Display,serif
             font-size: 3.4rem
             margin-top: 0px
-    &__sentences
-        margin: 0 120px
 
 .headline
     font-weight: 700
@@ -85,11 +81,10 @@ body
         background-color: white !important
         transition-duration: .4s
     .conteiner
-        height: 35px
         padding: 33px 0
         margin: 0 120px
         &__nav
-            height: 100%
+            font-family: Arial
             .logo
                 display: inline-block
                 cursor: pointer
@@ -100,14 +95,14 @@ body
         .navbar
             margin: 9px 0
             vertical-align: middle
-            height: 100%
             float: right
             &__item
                 display: inline-block
                 margin-right: 20px
+                user-select: none
             &__link
                 color: #bfbfbf
-                font-weight: 700
+                font-weight: 500
             &__link:hover
                 color: white
             &__link_active
@@ -148,14 +143,15 @@ a
     color: white
     font-family: Work Sans,sans-serif
     &__container
-        height: 85px
         margin: 78px 120px
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
     .item
         min-height: 50px
         padding: 30px 15px 0 0
         position: relative
+        width: 273.02px
         &__icon
             display: inline-block
             position: absolute
@@ -279,7 +275,7 @@ a
         .activate
             left: 100%
         .activateer
-            left: 200%
+            left: 100%
         &_relative
             position: relative
             height: 204.094px
@@ -368,7 +364,7 @@ a
                 display: flex
                 justify-content: space-between
             &__input
-                width: 42%
+                width: 39.7%
             &__btn
                 padding: 18px 25px
                 font-size: .96rem
@@ -411,13 +407,87 @@ a
 .footer
     background-color: #ebebeb
     &__container
-        margin: 44px 205px 25px 205px
+        margin: 44px auto 25px auto
         display: flex
         flex-direction: column
     &__text
-        height: 33.2px
         text-align: center
         .text
             margin: 0
             a
                 color: black
+
+@media (max-width: 1000px)
+    .information
+        .sentences
+            margin: 0 60px
+            &__headline
+                font-size: 2rem
+    
+    .portfolio
+        &__text
+            margin: 0 140px 52px
+        .projects
+            grid-template-columns: 30px 1fr 1fr 30px
+            height: 1800px
+            grid-template-areas: ". item_1 item_2 ." ". item_3 item_4 ." ". item_5 item_6 ." ". item_7 item_8 ." ". item_9 . ."
+
+    .contact
+        &__box
+            flex-direction: column
+        &__container
+            width: 100%
+            margin-bottom: 30px
+        &__formcontainer
+            width: 100%
+
+@media (max-width: 880px)
+
+    
+    .about
+        &__conteiner
+            width: 80%
+
+@media (max-width: 680px)
+    .portfolio
+        &__text
+            margin: 0 60px 52px
+        .projects
+            grid-template-columns: 30px 1fr 30px
+            height: 3240px
+            grid-template-areas: ". item_1 ."  ". item_2 ." ". item_3 ." ". item_4 ." ". item_5 ." ". item_6 ." ". item_7 ." ". item_8 ." ". item_9 ."
+
+    .contact
+        &__box
+            margin: 100px 30px
+        &__formcontainer
+            .form
+                &__inputcontainer
+                    flex-direction: column
+
+    .karusel
+        .box
+            &__item
+                margin: 0 35px
+                .quote
+                    font-size: 1.2rem
+
+@media (max-width: 817px)
+    .statistics
+        &__container
+            justify-content: center
+            margin: 78px 60px
+
+@media (max-width: 416px)
+    .statistics
+        &__container
+            margin: 78px 30px
+
+    .contact
+        .form
+            &__btn
+                width: 100%
+
+    .portfolio
+        .projects
+            height: 2650px
