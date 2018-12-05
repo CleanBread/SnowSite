@@ -418,6 +418,10 @@ a {
     margin: 44px 205px 25px 205px;
     display: flex;
     flex-direction: column; }
-  .footer__social {
+  .footer__text {
     height: 33.2px;
-    padding-bottom: 12px; }
+    text-align: center; }
+    .footer__text .text {
+      margin: 0; }
+      .footer__text .text a {
+        color: black; }
