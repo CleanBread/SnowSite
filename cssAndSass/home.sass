@@ -109,6 +109,19 @@ body
                 color: #5f5f5f
             &__link_active:hover
                 color: #0e0e0e
+        .navbar_active
+            display: none
+            opacity: 0
+            float: right
+            margin-top: 9px
+            .icon_active
+                display: block
+                .line
+                    border-bottom: 2px solid black
+                    display: block
+                    width: 20px
+                    margin-bottom: 6px
+
 a
     text-decoration: none
 
@@ -273,9 +286,7 @@ a
         width: 100%
         margin-top: 177px
         .activate
-            left: 100%
-        .activateer
-            left: 100%
+            left: -100%
         &_relative
             position: relative
             height: 204.094px
@@ -440,6 +451,11 @@ a
             margin-bottom: 30px
         &__formcontainer
             width: 100%
+
+    .header
+        .conteiner
+            .navbar
+                display: none
 
 @media (max-width: 880px)
 
