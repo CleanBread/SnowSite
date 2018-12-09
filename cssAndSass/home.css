@@ -92,7 +92,7 @@ body {
       border-bottom-color: black !important; }
   .header .conteiner {
     padding: 33px 0;
-    margin: 0 120px; }
+    margin: 0 60px; }
     .header .conteiner__nav {
       font-family: Arial; }
       .header .conteiner__nav .logo {
@@ -492,6 +492,14 @@ a {
     width: 100%; }
   .portfolio .projects {
     height: 2650px; } }
+
+@media (max-width: 450px) {
+  .header .conteiner {
+    margin: 0 40px; }
+  .information .sentences__topline {
+    font-size: 0.7rem; }
+  .information .sentences__headline {
+    font-size: 1.5rem; } }
 
 .navigation {
   opacity: 0;
