@@ -12,6 +12,9 @@
 .hide
     display: none !important
     opacity: 0
+.show
+    visibility: visible !important
+    opacity: 1 !important
 body 
     margin: 0px
     overflow-x: hidden
@@ -80,6 +83,8 @@ body
     &_active
         background-color: white !important
         transition-duration: .4s
+        .line
+            border-bottom-color: black !important
     .conteiner
         padding: 33px 0
         margin: 0 120px
@@ -110,14 +115,13 @@ body
             &__link_active:hover
                 color: #0e0e0e
         .navbar_active
-            display: none
-            opacity: 0
             float: right
             margin-top: 9px
+            display: none
             .icon_active
                 display: block
                 .line
-                    border-bottom: 2px solid black
+                    border-bottom: 2px solid #d8d8d8
                     display: block
                     width: 20px
                     margin-bottom: 6px
@@ -283,10 +287,11 @@ a
     background-size: cover
     color: white
     .box
+        overflow: hidden
         width: 100%
         margin-top: 177px
         .activate
-            left: -100%
+            left: 100%
         &_relative
             position: relative
             height: 204.094px
@@ -456,6 +461,8 @@ a
         .conteiner
             .navbar
                 display: none
+            .navbar_active
+                display: block
 
 @media (max-width: 880px)
 
@@ -507,3 +514,58 @@ a
     .portfolio
         .projects
             height: 2650px
+
+.navigation
+    opacity: 0
+    visibility: hidden
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 10
+    background: url('../images/bg-menu.jpg') 50% 50%
+    background-size: cover
+    transition-duration: 0.5s
+    .cross
+        display: inline-block
+        width: 18px
+        height: 18px
+        color: #d8d8d8
+        position: relative
+        margin-right: 3px
+    .cross::before
+        position: absolute
+        content: ""
+        display: block
+        height: 0
+        border-bottom: 2px solid
+        top: 50%
+        left: 0
+        transform-origin: 50% 50%
+        transform: rotate(45deg)
+        width: 21px
+    .cross::after
+        position: absolute
+        content: ""
+        display: block
+        height: 0
+        border-bottom: 2px solid
+        top: 50%
+        left: 0
+        transform-origin: 50% 50%
+        transform: rotate(-45deg)
+        width: 21px
+    .menu
+        width: 100%
+        position: fixed
+        top: 40%
+        font-family: Arial
+        &__container
+            margin: 0
+            padding: 0
+            text-align: center
+        &__item
+            user-select: none
+            margin-bottom: 20px
+        &__link
+            color: #d8d8d8
+            font-size: 2rem

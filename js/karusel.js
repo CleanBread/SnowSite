@@ -99,4 +99,7 @@
     box.forEach((it) => {
         it.addEventListener("mousedown", onBoxDown);
     })
+    // box.forEach((item) => {
+    //     item.addEventListener("touchstart", onBoxDown);
+    // })
 })();
