@@ -5,12 +5,14 @@
       animationTime = 300,
       framesCount = 100;
     
-      
+    var mobileNav = document.querySelector('.navigation');
 
     anchors.forEach((item) => {
         
         item.addEventListener('click', (e) => {
-            
+
+            mobileNav.classList.remove('show');
+
             e.preventDefault();
     
             
