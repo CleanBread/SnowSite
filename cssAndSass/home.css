@@ -475,6 +475,8 @@ a {
     margin: 100px 30px; }
   .contact__formcontainer .form__inputcontainer {
     flex-direction: column; }
+  .karusel .box__active {
+    transition: .4s; }
   .karusel .box__item {
     margin: 0 35px; }
     .karusel .box__item .quote {

@@ -11,18 +11,20 @@
 
         target.classList.add('cursor_grabbing');
         var startCoords = {
-            x: evt.clientX
+            x: evt.clientX || evt.changedTouches[0].pageX
         };
+        console.log(startCoords.x);
 
         var onMouseMove = function (moveEvt) {
-            moveEvt.preventDefault();
 
             var shift = {
-                x: startCoords.x - moveEvt.clientX,
+                x: startCoords.x - moveEvt.clientX || startCoords.x - moveEvt.changedTouches[0].pageX,
             };
+            console.log(shift.x);
             startCoords = {
-                x: moveEvt.clientX
+                x: moveEvt.clientX || moveEvt.changedTouches[0].pageX
             };
+            console.log(startCoords.x);
         
             var newLeftOffset = target.offsetLeft - shift.x;
             newLeftOffset = newLeftOffset * 100 / windowWidht;
@@ -46,6 +48,7 @@
         var onMouseUp = function (upEvt) {
             upEvt.preventDefault();
             document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('touchmove', onMouseMove);
             target.classList.remove('cursor_grabbing');
             if (target.offsetLeft <= -100 && next) {
                 target.style.left = -100 + '%';
@@ -90,16 +93,19 @@
                 }
             }
             document.removeEventListener('mouseup', onMouseUp);
+            document.removeEventListener('touchend', onMouseUp);
         };
         
         
         document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('touchmove', onMouseMove);
+        document.addEventListener('touchend', onMouseUp);
         document.addEventListener('mouseup', onMouseUp);
     };
     box.forEach((it) => {
         it.addEventListener("mousedown", onBoxDown);
     })
-    // box.forEach((item) => {
-    //     item.addEventListener("touchstart", onBoxDown);
-    // })
+    box.forEach((item) => {
+        item.addEventListener("touchstart", onBoxDown);
+    })
 })();
