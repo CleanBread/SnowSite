@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "express": "^4.16.4",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.2",
     "lodash": "^4.17.11",
