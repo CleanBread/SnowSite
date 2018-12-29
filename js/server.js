@@ -1,4 +1,3 @@
-var http = require('http');
 var express = require('express');
 
 var app = express();
@@ -23,4 +22,5 @@ app.get('/port', (req, res) => {
     res.send(JSON.stringify(mass));
 });
 
-app.listen(3000, '192.168.0.13');
+app.listen(3000, '192.168.1.8');
+// 192.168.0.13

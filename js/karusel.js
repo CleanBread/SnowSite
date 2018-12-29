@@ -13,18 +13,15 @@
         var startCoords = {
             x: evt.clientX || evt.changedTouches[0].pageX
         };
-        console.log(startCoords.x);
 
         var onMouseMove = function (moveEvt) {
 
             var shift = {
                 x: startCoords.x - moveEvt.clientX || startCoords.x - moveEvt.changedTouches[0].pageX,
             };
-            console.log(shift.x);
             startCoords = {
                 x: moveEvt.clientX || moveEvt.changedTouches[0].pageX
             };
-            console.log(startCoords.x);
         
             var newLeftOffset = target.offsetLeft - shift.x;
             newLeftOffset = newLeftOffset * 100 / windowWidht;
