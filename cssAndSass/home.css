@@ -438,72 +438,6 @@ a {
       .footer__text .text a {
         color: black; }
 
-@media (max-width: 1000px) {
-  .information .sentences {
-    margin: 0 60px; }
-    .information .sentences__headline {
-      font-size: 2rem; }
-  .portfolio__text {
-    margin: 0 140px 52px; }
-  .portfolio .projects {
-    grid-template-columns: 30px 1fr 1fr 30px;
-    height: 1800px;
-    grid-template-areas: ". item_1 item_2 ." ". item_3 item_4 ." ". item_5 item_6 ." ". item_7 item_8 ." ". item_9 . ."; }
-  .contact__box {
-    flex-direction: column; }
-  .contact__container {
-    width: 100%;
-    margin-bottom: 30px; }
-  .contact__formcontainer {
-    width: 100%; }
-  .header .conteiner .navbar {
-    display: none; }
-  .header .conteiner .navbar_active {
-    display: block; } }
-
-@media (max-width: 880px) {
-  .about__conteiner {
-    width: 80%; } }
-
-@media (max-width: 680px) {
-  .portfolio__text {
-    margin: 0 60px 52px; }
-  .portfolio .projects {
-    grid-template-columns: 30px 1fr 30px;
-    height: 3240px;
-    grid-template-areas: ". item_1 ."  ". item_2 ." ". item_3 ." ". item_4 ." ". item_5 ." ". item_6 ." ". item_7 ." ". item_8 ." ". item_9 ."; }
-  .contact__box {
-    margin: 100px 30px; }
-  .contact__formcontainer .form__inputcontainer {
-    flex-direction: column; }
-  .karusel .box__active {
-    transition: .4s; }
-  .karusel .box__item {
-    margin: 0 35px; }
-    .karusel .box__item .quote {
-      font-size: 1.2rem; } }
-
-@media (max-width: 817px) {
-  .statistics__container {
-    justify-content: center;
-    margin: 78px 60px; } }
-
-@media (max-width: 416px) {
-  .statistics__container {
-    margin: 78px 30px; }
-  .contact .form__btn {
-    width: 100%; }
-  .portfolio .projects {
-    height: 2650px; } }
-
-@media (max-width: 450px) {
-  .header .conteiner {
-    margin: 0 40px; }
-  .information .sentences__topline {
-    font-size: 0.7rem; }
-  .information .sentences__headline {
-    font-size: 1.5rem; } }
-
 .cross {
   display: inline-block;
   width: 18px;
@@ -581,7 +515,7 @@ a {
   .modal__close {
     position: absolute;
     top: 40px;
-    right: 35px; }
+    right: 40px; }
   .modal__container {
     display: flex;
     flex-direction: column;
@@ -610,3 +544,81 @@ a {
           color: black; }
   .modal img {
     width: 100%; }
+
+@media (max-width: 1000px) {
+  .modal__container {
+    margin: 0 100px 50px 100px; }
+  .information .sentences {
+    margin: 0 60px; }
+    .information .sentences__headline {
+      font-size: 2rem; }
+  .portfolio__text {
+    margin: 0 140px 52px; }
+  .portfolio .projects {
+    grid-template-columns: 30px 1fr 1fr 30px;
+    height: 1800px;
+    grid-template-areas: ". item_1 item_2 ." ". item_3 item_4 ." ". item_5 item_6 ." ". item_7 item_8 ." ". item_9 . ."; }
+  .contact__box {
+    flex-direction: column; }
+  .contact__container {
+    width: 100%;
+    margin-bottom: 30px; }
+  .contact__formcontainer {
+    width: 100%; }
+  .header .conteiner .navbar {
+    display: none; }
+  .header .conteiner .navbar_active {
+    display: block; } }
+
+@media (max-width: 880px) {
+  .modal .inf {
+    flex-direction: column; }
+    .modal .inf__text {
+      width: 100%; }
+    .modal .inf .project {
+      margin-left: 0; }
+  .about__conteiner {
+    width: 80%; } }
+
+@media (max-width: 680px) {
+  .modal__container {
+    margin: 0 60px 50px 60px; }
+  .portfolio__text {
+    margin: 0 60px 52px; }
+  .portfolio .projects {
+    grid-template-columns: 30px 1fr 30px;
+    height: 3240px;
+    grid-template-areas: ". item_1 ."  ". item_2 ." ". item_3 ." ". item_4 ." ". item_5 ." ". item_6 ." ". item_7 ." ". item_8 ." ". item_9 ."; }
+  .contact__box {
+    margin: 100px 30px; }
+  .contact__formcontainer .form__inputcontainer {
+    flex-direction: column; }
+  .karusel .box__active {
+    transition: .4s; }
+  .karusel .box__item {
+    margin: 0 35px; }
+    .karusel .box__item .quote {
+      font-size: 1.2rem; } }
+
+@media (max-width: 817px) {
+  .statistics__container {
+    justify-content: center;
+    margin: 78px 60px; } }
+
+@media (max-width: 416px) {
+  .statistics__container {
+    margin: 78px 30px; }
+  .contact .form__btn {
+    width: 100%; }
+  .portfolio .projects {
+    height: 2650px; } }
+
+@media (max-width: 450px) {
+  .modal .inf {
+    font-size: 12px; }
+  .header .conteiner {
+    margin: 0 40px; }
+  .information .sentences__topline {
+    font-size: 0.7rem; }
+  .information .sentences__headline {
+    font-size: 1.5rem; } }

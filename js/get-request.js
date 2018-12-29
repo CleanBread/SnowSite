@@ -11,7 +11,6 @@ xhr.addEventListener('load', function () {
   mass = xhr.response;
 });
 
-alert(mass);
 xhr.open('GET', 'http://192.168.1.8:3000/port');
 xhr.send();
 })();

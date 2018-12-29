@@ -434,103 +434,6 @@ a
             a
                 color: black
 
-@media (max-width: 1000px)
-    .information
-        .sentences
-            margin: 0 60px
-            &__headline
-                font-size: 2rem
-    
-    .portfolio
-        &__text
-            margin: 0 140px 52px
-        .projects
-            grid-template-columns: 30px 1fr 1fr 30px
-            height: 1800px
-            grid-template-areas: ". item_1 item_2 ." ". item_3 item_4 ." ". item_5 item_6 ." ". item_7 item_8 ." ". item_9 . ."
-
-    .contact
-        &__box
-            flex-direction: column
-        &__container
-            width: 100%
-            margin-bottom: 30px
-        &__formcontainer
-            width: 100%
-
-    .header
-        .conteiner
-            .navbar
-                display: none
-            .navbar_active
-                display: block
-
-@media (max-width: 880px)
-
-    
-    .about
-        &__conteiner
-            width: 80%
-
-@media (max-width: 680px)
-    .portfolio
-        &__text
-            margin: 0 60px 52px
-        .projects
-            grid-template-columns: 30px 1fr 30px
-            height: 3240px
-            grid-template-areas: ". item_1 ."  ". item_2 ." ". item_3 ." ". item_4 ." ". item_5 ." ". item_6 ." ". item_7 ." ". item_8 ." ". item_9 ."
-
-    .contact
-        &__box
-            margin: 100px 30px
-        &__formcontainer
-            .form
-                &__inputcontainer
-                    flex-direction: column
-
-    .karusel
-        .box
-            &__active
-                transition: .4s
-            &__item
-                margin: 0 35px
-                .quote
-                    font-size: 1.2rem
-
-
-@media (max-width: 817px)
-    .statistics
-        &__container
-            justify-content: center
-            margin: 78px 60px
-
-@media (max-width: 416px)
-    .statistics
-        &__container
-            margin: 78px 30px
-
-    .contact
-        .form
-            &__btn
-                width: 100%
-
-    .portfolio
-        .projects
-            height: 2650px
-
-@media (max-width: 450px)
-    .header
-        .conteiner
-            margin: 0 40px
-
-    .information
-        .sentences
-            &__topline
-                font-size: 0.7rem
-            &__headline
-                font-size: 1.5rem
-
 .cross
     display: inline-block
     width: 18px
@@ -607,7 +510,7 @@ a
     &__close
         position: absolute
         top: 40px
-        right: 35px
+        right: 40px
     &__container
         display: flex
         flex-direction: column
@@ -635,4 +538,120 @@ a
                 strong
                     color: black
     img
-        width: 100%       
+        width: 100%
+
+@media (max-width: 1000px)
+    .modal
+        &__container
+            margin: 0 100px 50px 100px
+
+    .information
+        .sentences
+            margin: 0 60px
+            &__headline
+                font-size: 2rem
+    
+    .portfolio
+        &__text
+            margin: 0 140px 52px
+        .projects
+            grid-template-columns: 30px 1fr 1fr 30px
+            height: 1800px
+            grid-template-areas: ". item_1 item_2 ." ". item_3 item_4 ." ". item_5 item_6 ." ". item_7 item_8 ." ". item_9 . ."
+
+    .contact
+        &__box
+            flex-direction: column
+        &__container
+            width: 100%
+            margin-bottom: 30px
+        &__formcontainer
+            width: 100%
+
+    .header
+        .conteiner
+            .navbar
+                display: none
+            .navbar_active
+                display: block
+
+
+@media (max-width: 880px)
+    .modal
+        .inf
+            flex-direction: column
+            &__text
+                width: 100%
+            .project
+                margin-left: 0
+    
+    .about
+        &__conteiner
+            width: 80%
+
+@media (max-width: 680px)
+    .modal
+        &__container
+            margin: 0 60px 50px 60px
+
+    .portfolio
+        &__text
+            margin: 0 60px 52px
+        .projects
+            grid-template-columns: 30px 1fr 30px
+            height: 3240px
+            grid-template-areas: ". item_1 ."  ". item_2 ." ". item_3 ." ". item_4 ." ". item_5 ." ". item_6 ." ". item_7 ." ". item_8 ." ". item_9 ."
+
+    .contact
+        &__box
+            margin: 100px 30px
+        &__formcontainer
+            .form
+                &__inputcontainer
+                    flex-direction: column
+
+    .karusel
+        .box
+            &__active
+                transition: .4s
+            &__item
+                margin: 0 35px
+                .quote
+                    font-size: 1.2rem
+
+
+@media (max-width: 817px)
+    .statistics
+        &__container
+            justify-content: center
+            margin: 78px 60px
+
+@media (max-width: 416px)
+    .statistics
+        &__container
+            margin: 78px 30px
+
+    .contact
+        .form
+            &__btn
+                width: 100%
+
+    .portfolio
+        .projects
+            height: 2650px
+
+@media (max-width: 450px)
+    .modal
+        .inf
+            font-size: 12px
+
+    .header
+        .conteiner
+            margin: 0 40px
+
+    .information
+        .sentences
+            &__topline
+                font-size: 0.7rem
+            &__headline
+                font-size: 1.5rem
