@@ -99,8 +99,8 @@
         document.addEventListener('touchend', onMouseUp);
         document.addEventListener('mouseup', onMouseUp);
     };
-    box.forEach((it) => {
-        it.addEventListener("mousedown", onBoxDown);
+    box.forEach((item) => {
+        item.addEventListener("mousedown", onBoxDown);
     })
     box.forEach((item) => {
         item.addEventListener("touchstart", onBoxDown);

@@ -531,6 +531,36 @@ a
             &__headline
                 font-size: 1.5rem
 
+.cross
+    display: inline-block
+    width: 18px
+    height: 18px
+    color: #d8d8d8
+    position: relative
+    margin-right: 3px
+.cross::before
+    position: absolute
+    content: ""
+    display: block
+    height: 0
+    border-bottom: 2px solid
+    top: 50%
+    left: 0
+    transform-origin: 50% 50%
+    transform: rotate(45deg)
+    width: 21px
+.cross::after
+    position: absolute
+    content: ""
+    display: block
+    height: 0
+    border-bottom: 2px solid
+    top: 50%
+    left: 0
+    transform-origin: 50% 50%
+    transform: rotate(-45deg)
+    width: 21px
+
 .navigation
     opacity: 0
     visibility: hidden
@@ -541,35 +571,7 @@ a
     background: url('../images/bg-menu.jpg') 50% 50%
     background-size: cover
     transition-duration: 0.5s
-    .cross
-        display: inline-block
-        width: 18px
-        height: 18px
-        color: #d8d8d8
-        position: relative
-        margin-right: 3px
-    .cross::before
-        position: absolute
-        content: ""
-        display: block
-        height: 0
-        border-bottom: 2px solid
-        top: 50%
-        left: 0
-        transform-origin: 50% 50%
-        transform: rotate(45deg)
-        width: 21px
-    .cross::after
-        position: absolute
-        content: ""
-        display: block
-        height: 0
-        border-bottom: 2px solid
-        top: 50%
-        left: 0
-        transform-origin: 50% 50%
-        transform: rotate(-45deg)
-        width: 21px
+    
     .menu
         width: 100%
         position: fixed
@@ -598,11 +600,20 @@ a
     top: 0
     color: black
     overflow: auto
+    transition-duration: 0.1s
+    .cross
+        color: black
+        cursor: pointer
+    &__close
+        position: absolute
+        top: 40px
+        right: 35px
     &__container
         display: flex
         flex-direction: column
         margin: 0 205px
-        color: black !important 
+        color: black !important
+        margin-bottom: 50px
     &__headline
         font-size: 2.6rem
     .inf
@@ -623,4 +634,5 @@ a
                 margin-bottom: 20px
                 strong
                     color: black
-            
+    img
+        width: 100%       
