@@ -541,7 +541,8 @@ a {
       .modal .inf .project__item {
         margin-bottom: 20px; }
         .modal .inf .project__item strong {
-          color: black; }
+          color: black;
+          margin-right: 5px; }
   .modal img {
     width: 100%; }
 
